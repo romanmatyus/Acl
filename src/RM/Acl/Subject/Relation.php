@@ -46,7 +46,7 @@ class Relation extends BaseDatabase implements ISubject
 				if ($this->simpleCache['resource'][$user->getId()][$resource][$id][$relation]) {
 
 					$acl = $this->getAcl($resource, $privilege, $id, [':acl_relation.name' => $relation]);
-					
+
 					try {
 						foreach ($acl as $rule) {
 							if ($rule->access !== NULL) {

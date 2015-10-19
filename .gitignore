@@ -2,4 +2,3 @@ vendor
 composer.lock
 output/
 tests/temp*
-

@@ -32,7 +32,7 @@ before_script:
     - ./vendor/bin/parallel-lint -e php,phpt --exclude vendor .
     - composer create-project nette/code-checker code-checker ~2.3 --no-interaction --prefer-source
     - php code-checker/src/code-checker.php -d src
-    - php code-checker/src/code-checker.php -d vendor
+    - php code-checker/src/code-checker.php -d tests
     - if [[ "$TRAVIS_PHP_VERSION" = "5.6" ]]; then FLAGS="-d extension=xdebug.so --coverage coverage.xml --coverage-src src"; fi;
 
 script:

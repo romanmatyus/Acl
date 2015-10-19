@@ -5,15 +5,15 @@
  * Role 'registred' has access to book:comment
  * Role 'author' has access to book:publish and inherit access from 'registred'.
  * Role 'superadmin' has access to book:*.
- * 
+ *
  * Author Isaac Asimov has access to book:* I, robot
  * Author Arthur C. Clarke has access to book:* 2001: A Space Odyssey
  * Customer John Doe has access to book:comment I, robot and 2001: A Space Odyssey
  * Customer John Wick has access to book:comment I, robot
- * 
+ *
  * User Arthur C. Clarke has not access to book:comment 2001: I, robot
  * User John Wick has access to book:comment 2001: A Space Odyssey
- * 
+ *
  * Other accesses are undefined (NULL).
  */
 
@@ -26,7 +26,7 @@ INSERT INTO `acl` (`id`, `resource`, `privilege`, `type`, `access`) VALUES
 (4,	'book',	'comment',	'role',	1),
 (5,	'book',	'publish',	'role',	1),
 (6,	'book',	NULL,	'role',	1),
-(7,	'book',	NULL,	'relation', 1),	
+(7,	'book',	NULL,	'relation', 1),
 (8,	'book',	'comment',	'relation',	1),
 (9,	'book',	'comment',	'user',	0),
 (10,	'book',	'comment',	'user',	1);
