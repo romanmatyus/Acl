@@ -20,7 +20,7 @@ matrix:
         - php: hhvm-nightly
 
 before_install:
-	- composer self-update
+    - composer self-update
 
 install:
     - mkdir -p vendor/bin
