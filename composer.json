@@ -42,6 +42,7 @@
 		"nette/utils": "~2.3@dev",
 		"latte/latte": "~2.3@dev",
 
+		"nette/tester": "~1.3",
 		"tracy/tracy": "@dev",
 		"mockery/mockery": "dev-master",
 		"jakub-onderka/php-parallel-lint": "~0.8"
