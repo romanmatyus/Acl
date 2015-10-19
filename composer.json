@@ -17,15 +17,15 @@
 		"issues": "https://github.com/romanmatyus/Acl/issues"
 	},
 	"require": {
-		"nette/security": ">=2.2",
-		"nette/reflection": ">=2.2"
+		"nette/security": "~2.3@dev",
+		"nette/reflection": "~2.3@dev"
 	},
 	"require-dev": {
-		"nette/database": "@dev",
+		"nette/database": "~2.3@dev",
 		"nette/tester": "@dev",
-		"nette/utils": "@dev",
-		"nette/bootstrap": "@dev",
-		"nette/http": "@dev",
+		"nette/utils": "~2.3@dev",
+		"nette/bootstrap": "~2.3@dev",
+		"nette/http": "~2.3@dev",
 		"tracy/tracy": "@dev",
 		"mockery/mockery": "dev-master",
 		"jakub-onderka/php-parallel-lint": "~0.8"
