@@ -1,0 +1,65 @@
+acl:
+	rules:
+		-
+			resource: book
+			privilege: detail
+			type: role
+			name: guest
+			access: true
+		-
+			resource: book
+			privilege: detail
+			id: 2
+			type: role
+			name: guest
+			access: false
+		-
+			resource: book
+			privilege: detail
+			type: role
+			name: registred
+			access: true
+		-
+			resource: book
+			privilege: comment
+			type: role
+			name: registred
+			access: true
+		-
+			resource: book
+			privilege: publish
+			type: role
+			name: author
+			access: true
+		-
+			resource: book
+			type: role
+			name: superadmin
+			access: true
+
+		-
+			resource: book
+			type: relation
+			name: author
+			access: true
+		-
+			resource: book
+			privilege: comment
+			type: relation
+			name: customer
+			access: true
+
+		-
+			resource: book
+			privilege: comment
+			id: 1
+			type: user
+			user: 4
+			access: false
+		-
+			resource: book
+			privilege: comment
+			id: 2
+			type: user
+			user: 2
+			access: TRUE

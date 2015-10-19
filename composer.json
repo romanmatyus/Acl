@@ -1,0 +1,41 @@
+{
+	"name": "rm/acl",
+	"type": "library",
+	"description": "Library for ACL with relationships.",
+	"keywords": ["nette", "acl", "rm", "relationships", "security"],
+	"homepage": "https://github.com/romanmatyus/Acl",
+	"license": ["MIT"],
+	"authors": [
+		{
+			"name": "Roman Mátyus",
+			"homepage": "http://romiix.org",
+			"email": "romanmatyus@romiix.org"
+		}
+	],
+	"support": {
+		"email": "romanmatyus@romiix.org",
+		"issues": "https://github.com/romanmatyus/Acl/issues"
+	},
+	"require": {
+		"nette/security": ">=2.2",
+		"nette/reflection": ">=2.2"
+	},
+	"require-dev": {
+		"nette/database": "@dev",
+		"nette/tester": "@dev",
+		"nette/utils": "@dev",
+		"nette/bootstrap": "@dev",
+		"nette/http": "@dev",
+		"tracy/tracy": "@dev",
+		"mockery/mockery": "dev-master",
+		"jakub-onderka/php-parallel-lint": "~0.8"
+	},
+	"autoload": {
+		"psr-0": {
+			"RM\\Acl": "src/"
+		},
+		"classmap": [
+			"src/RM/Acl/exceptions.php"
+		]
+	}
+}
